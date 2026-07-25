@@ -1,0 +1,14 @@
+Pixovia Ecosystem
+
+Pixovia offers multiple active platforms:
+- Pixovia File Library: A secure, fast platform for uploading, sharing, and discovering files online.
+- Pixovia Chat: Connect securely and chat seamlessly. Join the global Pixovia Chat room, connect with friends, and share high-quality media with zero latency.
+- Pixovia Learn: A complete learning and study application.
+- Pixovia Drive: A robust cloud storage app for Android and Web. (Download APK: https://github.com/pixovia/pixovia.github.io/releases/v1.0.drive/download/pixovia-drive.apk)
+- Pixovia Music: A completely free music downloader with multi-quality support. (Download: Coming Soon)
+
+Downloads are available at /download.
+
+Legacy Open Source:
+Please note that we had a previous version of Pixovia which is now fully open source. The entire legacy codebase—including the frontend, backend, and the full database—is available at github.com/pixovia.
+Importantly, the new Pixovia File Library features a completely changed infrastructure with significantly more features and enhancements compared to the legacy open source version.
