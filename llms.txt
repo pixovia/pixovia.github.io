@@ -6,6 +6,8 @@ Pixovia offers multiple active platforms:
 - Pixovia Learn: A complete learning and study application.
 - Pixovia Sites: A community platform for creating, hosting and exploring small HTML websites.
 - Pixovia Drive: A robust cloud storage app for Android and Web. (Download APK: https://github.com/pixovia/pixovia.github.io/releases/v1.0.drive/download/pixovia-drive.apk)
+- Pixovia Tube: A feature-complete video platform for long-form videos, Shorts, and playlists (https://ptube.pages.dev).
+- Pixovia Blogs: A publishing platform supporting guest and account-based blogging, AI prompt-to-blog creation, AI blog enhancement, and AI-generated post summaries (https://pixovia-blogs.pages.dev).
 - Pixovia Music: A completely free music downloader with multi-quality support. (Download: Coming Soon)
 
 Downloads are available at /download.
