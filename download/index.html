@@ -9,19 +9,21 @@
     <title>Download Pixovia Apps | Official Android APKs</title>
     <meta name="title" content="Download Pixovia Apps | Official Android APKs">
     <meta name="description"
-        content="Download official Pixovia Android applications including Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
+        content="Download official Pixovia Android applications including Uncensored GPT (UGPT), Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
     <meta name="keywords"
-        content="Pixovia, Download APK, Pixovia Tube, PTube, Pixovia Chat, Pixovia Drive, Pixovia Learn, Pixovia Library, Android Apps">
+        content="Pixovia, Download APK, Uncensored GPT, UGPT, U-GPT, Pixovia Tube, PTube, Pixovia Chat, Pixovia Drive, Pixovia Learn, Pixovia Library, Android Apps, AI Chatbot">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <link rel="canonical" href="https://pixovia.github.io/download">
+    <link rel="icon" type="image/jpeg" href="https://pixovia.pages.dev/icon-coloured-closeup.jpg">
+    <link rel="apple-touch-icon" href="https://pixovia.pages.dev/icon-coloured-closeup.jpg">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pixovia.github.io/download">
     <meta property="og:title" content="Download Pixovia Apps | Official Android APKs">
     <meta property="og:description"
-        content="Download official Pixovia Android applications including Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
+        content="Download official Pixovia Android applications including Uncensored GPT (UGPT), Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
     <meta property="og:image" content="https://pixovia.pages.dev/icon-coloured-closeup.jpg">
 
     <!-- Twitter -->
@@ -29,8 +31,80 @@
     <meta property="twitter:url" content="https://pixovia.github.io/download">
     <meta property="twitter:title" content="Download Pixovia Apps | Official Android APKs">
     <meta property="twitter:description"
-        content="Download official Pixovia Android applications including Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
+        content="Download official Pixovia Android applications including Uncensored GPT (UGPT), Pixovia Tube, Pixovia Chat, Pixovia Drive, Pixovia Learn, and Pixovia Library.">
     <meta property="twitter:image" content="https://pixovia.pages.dev/icon-coloured-closeup.jpg">
+
+    <!-- Structured Data (JSON-LD) for Rich Search Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Pixovia Android Applications",
+      "description": "Official Android APK downloads for Pixovia applications",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "Uncensored GPT (UGPT)",
+          "operatingSystem": "Android",
+          "applicationCategory": "UtilitiesApplication",
+          "softwareVersion": "1.8.2",
+          "downloadUrl": "https://u-gpt.pages.dev/download",
+          "description": "UGPT (Uncensored GPT) is your personal, uncensored AI assistant with zero guardrails and smart model switching."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 2,
+          "name": "Pixovia Tube",
+          "operatingSystem": "Android",
+          "applicationCategory": "MultimediaApplication",
+          "softwareVersion": "1.0",
+          "downloadUrl": "https://pixovia-library.pages.dev/files/cmsm3ej3ods7plse0ujc2pnsh",
+          "description": "Feature-packed video viewing and publishing platform with Shorts and playlists."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "Pixovia Chat",
+          "operatingSystem": "Android",
+          "applicationCategory": "CommunicationApplication",
+          "softwareVersion": "1.0",
+          "downloadUrl": "https://pixovia-library.pages.dev/files/cmsm2x1aftedt1dmg92zmlmvj",
+          "description": "Instant real-time messaging, public chatrooms, direct private messages, and AI assistant integration."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 4,
+          "name": "Pixovia Drive",
+          "operatingSystem": "Android",
+          "applicationCategory": "UtilitiesApplication",
+          "softwareVersion": "1.0",
+          "downloadUrl": "https://pixovia-library.pages.dev/files/cmsm2z087e11wquk78628tav9",
+          "description": "Personal cloud storage app to upload, manage, and share files securely."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 5,
+          "name": "Pixovia Learn",
+          "operatingSystem": "Android",
+          "applicationCategory": "EducationalApplication",
+          "softwareVersion": "1.0",
+          "downloadUrl": "https://pixovia-library.pages.dev/files/cmsm2sgyndve9witff2y38o3c",
+          "description": "Educational application designed for flashcards, study schedules, and subject notes."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 6,
+          "name": "Pixovia File Library",
+          "operatingSystem": "Android",
+          "applicationCategory": "UtilitiesApplication",
+          "softwareVersion": "1.0",
+          "downloadUrl": "https://pixovia-library.pages.dev/files/cmsm30ukqakg9yblb9o1my43w",
+          "description": "High-speed file repository allowing quick discovery, tagged collections, and album organization."
+        }
+      ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -110,18 +184,24 @@
                 mobile devices.</p>
         </div>
 
+        <!-- Filter Active Badge -->
+        <div id="filter-badge" class="mb-6 hidden justify-center items-center gap-3">
+            <span class="text-sm text-slate-300">Filtered by app: <strong id="filter-name" class="text-blue-400"></strong></span>
+            <a href="index.html" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-3 py-1 rounded-full border border-slate-700 transition-colors">Show All Apps</a>
+        </div>
+
         <!-- App Grid: 2 columns on mobile, 3 columns on tablet/desktop -->
         <div id="apps-container" class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
 
             <!-- 1. Pixovia Tube (PTube) -->
-            <div onclick="openAppModal('ptube')"
+            <div data-app="ptube" onclick="openAppModal('ptube')"
                 class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
                 <div class="flex flex-col items-center">
                     <img src="https://ptube.pages.dev/favicon.svg" alt="Pixovia Tube"
                         class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
                     <h2 class="text-base md:text-xl font-bold text-white mb-1">Pixovia Tube</h2>
                     <span
-                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-red-400 mb-2">v1.0.0</span>
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-red-400 mb-2">v1.0</span>
                 </div>
                 <a href="https://pixovia-library.pages.dev/files/cmsm3ej3ods7plse0ujc2pnsh" download="pixovia-tube.apk"
                     onclick="event.stopPropagation()"
@@ -135,15 +215,36 @@
                 </a>
             </div>
 
-            <!-- 2. Pixovia Chat -->
-            <div onclick="openAppModal('chat')"
+            <!-- 2. Uncensored GPT -->
+            <div data-app="ugpt" onclick="openAppModal('ugpt')"
+                class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
+                <div class="flex flex-col items-center">
+                    <img src="https://i.ibb.co/YvqjkNS/svgviewer-output-1.jpg" alt="Uncensored GPT"
+                        class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
+                    <h2 class="text-base md:text-xl font-bold text-white mb-1">Uncensored GPT</h2>
+                    <span
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-cyan-400 mb-2">v1.8.2</span>
+                </div>
+                <a href="https://u-gpt.pages.dev/download" download="ugpt-chat.apk" onclick="event.stopPropagation()"
+                    class="w-full py-2 md:py-3 px-2 md:px-4 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs md:text-sm rounded-xl transition-colors flex items-center justify-center gap-1.5 mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <span>Download APK</span>
+                </a>
+            </div>
+
+            <!-- 3. Pixovia Chat -->
+            <div data-app="chat" onclick="openAppModal('chat')"
                 class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
                 <div class="flex flex-col items-center">
                     <img src="https://pixovia-chat.pages.dev/android-chrome-192x192.png" alt="Pixovia Chat"
                         class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
                     <h2 class="text-base md:text-xl font-bold text-white mb-1">Pixovia Chat</h2>
                     <span
-                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-cyan-400 mb-2">v1.0.0</span>
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-cyan-400 mb-2">v1.0</span>
                 </div>
                 <a href="https://pixovia-library.pages.dev/files/cmsm2x1aftedt1dmg92zmlmvj" download="pixovia-chat.apk"
                     onclick="event.stopPropagation()"
@@ -157,15 +258,15 @@
                 </a>
             </div>
 
-            <!-- 3. Pixovia Drive -->
-            <div onclick="openAppModal('drive')"
+            <!-- 4. Pixovia Drive -->
+            <div data-app="drive" onclick="openAppModal('drive')"
                 class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
                 <div class="flex flex-col items-center">
                     <img src="https://pixovia-drive.pages.dev/favicon.svg" alt="Pixovia Drive"
                         class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
                     <h2 class="text-base md:text-xl font-bold text-white mb-1">Pixovia Drive</h2>
                     <span
-                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-blue-400 mb-2">v1.0.0</span>
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-blue-400 mb-2">v1.0</span>
                 </div>
                 <a href="https://pixovia-library.pages.dev/files/cmsm2z087e11wquk78628tav9" download="pixovia-drive.apk"
                     onclick="event.stopPropagation()"
@@ -179,15 +280,15 @@
                 </a>
             </div>
 
-            <!-- 4. Pixovia Learn -->
-            <div onclick="openAppModal('learn')"
+            <!-- 5. Pixovia Learn -->
+            <div data-app="learn" onclick="openAppModal('learn')"
                 class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
                 <div class="flex flex-col items-center">
                     <img src="https://pixovia-learn.pages.dev/android-chrome-512x512.png" alt="Pixovia Learn"
                         class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
                     <h2 class="text-base md:text-xl font-bold text-white mb-1">Pixovia Learn</h2>
                     <span
-                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-purple-400 mb-2">v1.0.0</span>
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-purple-400 mb-2">v1.0</span>
                 </div>
                 <a href="https://pixovia-library.pages.dev/files/cmsm2sgyndve9witff2y38o3c" download="pixovia-learn.apk"
                     onclick="event.stopPropagation()"
@@ -201,15 +302,15 @@
                 </a>
             </div>
 
-            <!-- 5. Pixovia Library -->
-            <div onclick="openAppModal('library')"
+            <!-- 6. Pixovia Library -->
+            <div data-app="library" onclick="openAppModal('library')"
                 class="app-card glass-card rounded-2xl md:rounded-3xl p-4 md:p-6 border-slate-700 flex flex-col justify-between text-center">
                 <div class="flex flex-col items-center">
                     <img src="https://pixovia.pages.dev/icon-coloured-closeup.jpg" alt="Pixovia Library"
                         class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover mb-3 border border-slate-700 shadow-md">
                     <h2 class="text-base md:text-xl font-bold text-white mb-1">Pixovia File Library</h2>
                     <span
-                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-emerald-400 mb-2">v1.0.0</span>
+                        class="text-[10px] md:text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-emerald-400 mb-2">v1.0</span>
                 </div>
                 <a href="https://pixovia-library.pages.dev/files/cmsm30ukqakg9yblb9o1my43w"
                     download="pixovia-library.apk" onclick="event.stopPropagation()"
@@ -266,41 +367,49 @@
         const appDetails = {
             ptube: {
                 title: "Pixovia Tube (PTube)",
-                version: "v1.0.0",
-                img: "https://pixovia.pages.dev/icon-coloured-closeup.jpg",
-                apk: "https://github.com/pixovia/pixovia.github.io/releases/download/v1.0.ptube/pixovia-tube.apk",
-                filename: "pixovia-tube.apk",
+                version: "v1.0",
+                img: "https://ptube.pages.dev/favicon.svg",
+                apk: "https://pixovia-library.pages.dev/files/cmsm3ej3ods7plse0ujc2pnsh",
+                filename: "ptube.apk",
                 about: "Pixovia Tube (PTube) is a feature-packed video viewing and publishing platform. Stream long-form videos, watch trending Shorts, explore playlists, and enjoy lightweight background video streaming on Android."
+            },
+            ugpt: {
+                title: "Uncensored GPT (UGPT)",
+                version: "v1.8.2",
+                img: "https://i.ibb.co/YvqjkNS/svgviewer-output-1.jpg",
+                apk: "https://u-gpt.pages.dev/download",
+                filename: "ugpt-chat.apk",
+                about: "UGPT (Uncensored GPT) is your personal, uncensored AI assistant. Experience artificial intelligence without limits, zero guardrails, smart model switching, and complete privacy directly on your Android device."
             },
             chat: {
                 title: "Pixovia Chat",
-                version: "v1.0.0",
-                img: "https://pixovia.pages.dev/icon-coloured-closeup.jpg",
-                apk: "https://github.com/pixovia/pixovia.github.io/releases/download/v1.0.chat/pixovia-chat.apk",
+                version: "v1.0",
+                img: "https://pixovia-chat.pages.dev/android-chrome-192x192.png",
+                apk: "https://pixovia-library.pages.dev/files/cmsm2x1aftedt1dmg92zmlmvj",
                 filename: "pixovia-chat.apk",
                 about: "Pixovia Chat brings instant real-time messaging, global public chatrooms, direct private messages, media file sharing, and AI assistant integration directly to your Android phone."
             },
             drive: {
                 title: "Pixovia Drive",
-                version: "v1.0.0",
-                img: "https://pixovia.pages.dev/icon-coloured-closeup.jpg",
-                apk: "https://github.com/pixovia/pixovia.github.io/releases/download/v1.0.drive/pixovia-drive.apk",
+                version: "v1.0",
+                img: "https://pixovia-drive.pages.dev/favicon.svg",
+                apk: "https://pixovia-library.pages.dev/files/cmsm2z087e11wquk78628tav9",
                 filename: "pixovia-drive.apk",
                 about: "Pixovia Drive is your personal cloud storage app. Seamlessly upload, manage, organize into folders, and share your files securely with offline caching and background uploading."
             },
             learn: {
                 title: "Pixovia Learn",
-                version: "v1.0.0",
-                img: "https://pixovia.pages.dev/icon-coloured-closeup.jpg",
-                apk: "https://github.com/pixovia/pixovia.github.io/releases/download/v1.0.learn/pixovia-learn.apk",
+                version: "v1.0",
+                img: "https://pixovia-learn.pages.dev/android-chrome-512x512.png",
+                apk: "https://pixovia-library.pages.dev/files/cmsm2sgyndve9witff2y38o3c",
                 filename: "pixovia-learn.apk",
                 about: "Pixovia Learn is an intuitive educational application designed to help students organize study schedules, manage flashcards, access subject notes, and boost study efficiency."
             },
             library: {
-                title: "Pixovia Library",
-                version: "v1.0.0",
+                title: "Pixovia File Library",
+                version: "v1.0",
                 img: "https://pixovia.pages.dev/icon-coloured-closeup.jpg",
-                apk: "https://github.com/pixovia/pixovia.github.io/releases/download/v1.0.library/pixovia-library.apk",
+                apk: "https://pixovia-library.pages.dev/files/cmsm30ukqakg9yblb9o1my43w",
                 filename: "pixovia-library.apk",
                 about: "Pixovia Library is a high-speed file repository allowing quick discovery, multi-part downloads, tagged file collections, and album organization for all media assets."
             }
@@ -328,6 +437,68 @@
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
+
+        // Filter apps based on URL parameter ?app=
+        function applyUrlAppFilter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const rawApp = urlParams.get('app')?.toLowerCase().trim();
+
+            if (!rawApp) return;
+
+            const aliasMap = {
+                'ptube': 'ptube',
+                'tube': 'ptube',
+                'pixovia-tube': 'ptube',
+                'ugpt': 'ugpt',
+                'u-gpt': 'ugpt',
+                'uncensored-gpt': 'ugpt',
+                'chat': 'chat',
+                'pixovia-chat': 'chat',
+                'drive': 'drive',
+                'pixovia-drive': 'drive',
+                'learn': 'learn',
+                'pixovia-learn': 'learn',
+                'library': 'library',
+                'pixovia-library': 'library',
+                'file-library': 'library'
+            };
+
+            const targetKey = aliasMap[rawApp] || rawApp;
+            const cards = document.querySelectorAll('#apps-container [data-app]');
+            let matchCount = 0;
+
+            cards.forEach(card => {
+                const appKey = card.getAttribute('data-app').toLowerCase();
+                if (appKey === targetKey || appKey.includes(targetKey) || targetKey.includes(appKey)) {
+                    card.style.display = '';
+                    matchCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (matchCount > 0) {
+                const filterBadge = document.getElementById('filter-badge');
+                const filterName = document.getElementById('filter-name');
+                if (filterBadge && filterName) {
+                    filterName.textContent = rawApp;
+                    filterBadge.classList.remove('hidden');
+                    filterBadge.classList.add('flex');
+                }
+
+                // Dynamic SEO metadata update for filtered view
+                const appInfo = appDetails[targetKey];
+                if (appInfo) {
+                    document.title = `Download ${appInfo.title} APK | Official Pixovia Apps`;
+                    const metaDesc = document.querySelector('meta[name="description"]');
+                    if (metaDesc) {
+                        metaDesc.setAttribute('content', `Download official ${appInfo.title} APK for Android. ${appInfo.about}`);
+                    }
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', applyUrlAppFilter);
     </script>
 </body>
 
